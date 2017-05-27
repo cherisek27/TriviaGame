@@ -1,339 +1,145 @@
-body {
-	font-family:'Arial', "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 18px;
-	line-height: 34px; 
-	color: #777;
-	background: url("../assets/images/circles-and-roundabouts.png.png");
-} 
+$(document).ready(function(){
+  $("#start-button").click(function(){
+// ----------------------------------------------------------------
+ // declaring the value for the timer to 60 seconds
+ // hide the start button and rules
+    var number = 50;
+    alert("The let game begin!");
+    $("#start-button").on("click", start);  // starts the games 
+    $("#submit").on("click", finish);  // submits answers and finishes the game
+    $("#restart").on("click", restart);  // restarts the games 
+// ----------------------------------------------------------------
+// functions
+    function start(){
+      counter = setInterval(timer, 1000);
+      showMe(".question");
+      showMe(".answers");
+      showMe("#submit");
+      hideMe("#start-button");
+      hideMe(".rules");
+      hideMe("#restart");
+      hideMe("#results");
+    }
+    function timer(){
+      number-- // decrements the timer by 1
+      $("#show-number").html("<h2>" + number + "</h2>" );
+      if (number === 0){
+        alert("Times Up!")
+        stop(); // calls the stop function
+      }
+    }
+    function stop(){
+      clearInterval(counter); // stops the timer
+      $("#results").show();
+      $("#restart").show();
+    $(".question").hide();
+    $(".answers").hide();
+    $("#submit").hide();
+    }
+    function finish(){
+      number = 1; // if number is equal to 0 number will show -1 so 1 has to be selected
+      clearInterval(counter); // stops the timer
+      timer();
+    }
 
-* { 
-	box-sizing: border-box;
- } 
+    function restart(){
+      number = 50;
+      start();
+    }
 
- /*general */ 
+    function hideMe(e) {
+      $(e).hide();
+    }
+    function showMe(e) {
+      $(e).show();
+    }
 
- .container { 
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	clear: both;
-  } 
+// ----------------------------------------------------------------
+//calling functions
+    start(); // calls the start function
+  });
+});
 
-  h1, 
-  h2, 
-  h3, 
-  p { 
-	margin-bottom: 20px;
-   } 
+$(document).ready(function() 
+{    $("#results").click(function() {                
 
-  p:last-child {
-  	margin-bottom: 0;
-  } 
+if (!$("input[@name=q1]:checked").val() ||            
+!$("input[@name=q2]:checked").val() ||            
+!$("input[@name=q3]:checked").val() ||            
+!$("input[@name=q4]:checked").val() ||            
+!$("input[@name=q5]:checked").val() ||            
+!$("input[@name=q6]:checked").val() ||            
+!$("input[@name=q7]:checked").val() ||            
+!$("input[@name=q8]:checked").val() ||            
+!$("input[@name=q9]:checked").val() ||            
+!$("input[@name=q10]:checked").val()            
+) {            
+alert("You're not done yet!");        
+}        
 
+else {            
+var cat1name = "1";            
+var cat2name = "2";            
+var cat3name = "3";            
+var cat4name = "4";            
+var cat5name = "5";            
+var cat6name = "6";            
+var cat7name = "7";            
+var cat8name = "8";            
+var cat9name = "9";            
+var cat10name = "10";            
+var cat11name = "None";            
+            
 
-  h1, 
-  h2, 
-  h3 { 
-	font-family: Georgia, Times, "Times New Roman", serif; 
-	font-weight: 700; 
-	color: #4aaaa5;
-   }
+var cat1 = ($("input[@name=q1]:checked").val() != "a"); 
+           
+var cat2 = ($("input[@name=q2]:checked").val() != "b");  
 
-h1 { 
-	padding-bottom: 20px;
-	font-size: 30px;
-	line-height: 49px; 
-	border-bottom: 3px solid #ddd; 
- }
+var cat3 = ($("input[@name=q3]:checked").val() != "c");  
 
- h2, 
- h3 { 
-	font-size: 22px;
-  } 
+var cat4 = ($("input[@name=q4]:checked").val() != "d");  
 
-  /* header */
+var cat5 = ($("input[@name=q5]:checked").val() != "a"); 
 
-  #masthead { 
-	position: static;
-	z-index: 99;
-	width: 100%;
-	margin: 0 0 30px;
-	overflow: auto; 
-	color: #fff; 
-	background: #fff; 
-	border-bottom: 2px solid #ccc; 
-   }
+var cat6 = ($("input[@name=q6]:checked").val() != "b");  
 
-   #logo { 
-	float: left;
-	width: 250px; 
-	height: 90px; 
-	font-family: Georgia, Times, "Times New Roman", serif; 
-	font-size: 30px; 
-	font-weight: 700; 
-	line-height: 90px;
-	color: #fff; 
-	text-align: center;
-	text-decoration: none;
-	background: #4aaaa5;
-  }
+var cat7 = ($("input[@name=q7]:checked").val() != "c"); 
 
- nav { 
-	float: right;
-	margin-top: 25px;
- } 
+var cat8 = ($("input[@name=q8]:checked").val() != "d");  
 
-nav a { 
-	display: inline-block;
-	padding-left: 15px;
-	margin-left: 15px;
-	line-height: 18px;
-	color: #999; 
-	text-decoration: none;
-	border-left: 1px solid #efefef; 
- } 
+var cat9 = ($("input[@name=q9]:checked").val() != "a"); 
 
- nav a:first-child { 
-		border-left: 0 none;
- } 
+var cat10 = ($("input[@name=q10]:checked").val() != "b");  
 
-/* footer */ 
+var cat11 = (!cat1 && !cat2 && !cat3 && !cat4 && !cat5 && !cat6 && !cat7 && !cat8 && !cat9 && !cat10); var categories = [];                        
 
-footer { 
-	padding: 30px 0; 
-	clear: both;
-	font-size: 12px; 
-	color: #fff; 
-	color: #ccc; 
-	text-align: center; 
-	background: #666;
-	border-top: 8px solid #4aaaa5; 	 
-} 
+if (cat1) { categories.push(cat1name) };            
+if (cat2) { categories.push(cat2name) };            
+if (cat3) { categories.push(cat3name) };            
+if (cat4) { categories.push(cat4name) };            
+if (cat5) { categories.push(cat5name) };            
+if (cat6) { categories.push(cat6name) };            
+if (cat7) { categories.push(cat7name) };            
+if (cat8) { categories.push(cat8name) };            
+if (cat9) { categories.push(cat9name) };            
+if (cat10) { categories.push(cat10name) };            
+if (cat11) { categories.push(cat11name) };                        
 
-/* sidebar */ 
+var catStr = 'You answered the following questions incorrectly: ' + categories.join(', ') + '';                     
+$("#categorylist").text(catStr);                        
+$("#categorylist").show("slow");            
 
-.sidebar {
-	float: right;
-	width: 100%;
-	max-width: 270px; 
-	padding: 30px;
-	margin-bottom: 20px; 
-	background: #fff; 
-	border: 1px solid #ddd;
-} 
-
-h3, 
-.sidebar h2 { 
-	padding-bottom: 20px; 
-	margin-bottom: 15px; 
-	line-height: 22px; 
-	border-bottom: 2px solid #eee; 
- }
-
- .social { 
-	width: 62px; 
-	height: 62px;
-	margin-top: 8px;
-	margin-right: 5px;
-  } 
-
-  .social:last-child {
-  	margin-right: 0;
-  } 
-
-  /* main */
-
-  #maincontainer {
-  	padding-top: 130px; 
-  } 
-
-  .main-section {
-  	float: left;
-  	width: 100%;
-  	max-width: 650px; 
-  	padding: 30px; 
-  	margin: 0 0 40px;
-  	background: #fff; 
-  	border: 1px solid #ddd; 
-  } 
-
-
-  /* portfolio page */
-
-  .work { 
-	position: relative;
-	float: left;
-	width: 274px; 
-	margin: 20px 0 25px;
-	overflow: auto;
-} 
-
-   .work:nth-child(even) {
-   	margin-right: 40px;
+if (cat1) { $("#category1").show("slow"); };            
+if (cat2) { $("#category2").show("slow"); };            
+if (cat3) { $("#category3").show("slow"); };            
+if (cat4) { $("#category4").show("slow"); };            
+if (cat5) { $("#category5").show("slow"); };            
+if (cat6) { $("#category6").show("slow"); };            
+if (cat7) { $("#category7").show("slow"); };            
+if (cat8) { $("#category8").show("slow"); };            
+if (cat9) { $("#category9").show("slow"); };            
+if (cat10) { $("#category10").show("slow"); };            
+if (cat11) { $("#category11").show("slow"); };
+{ $("#closing").show("slow"); };
 }
-
-
-   .work img {
-   	width: 100%;
-   	border: 0 none;
-   	opacity: 0.8;
-} 
-
-   .work h3 { 
-	position: absolute;
-	bottom: 20px; 
-	width: 100%; 
-	padding: 15px; 
-	margin-bottom: 0;
-	font-weight: 300px;
-	line-height: 30px; 
-	color: #fff; 
-	text-align: center;
-	background: #4aaaa5; 
-	border-bottom: 0;
-} 
-
-    .auth-image {
-    float: left;
-    width: 200px; 
-    height: auto;
-    margin-top: 10px;
-    margin-right: 25px;
-    } 
-  
-
-    /* contact page */
-
-    #contact-form ul {
-    margin-bottom: 20px;
-    } 
-
-    #contact-form li {
-    margin-bottom: 10px; 
-    } 
-
-    label, 
-    input[type=text],
-    input[type=email],
-    textarea {
-    	display: block;
-    	width: 100%;	
-    }  
-
-    label, 
-    input[type=text],
-    input[type=email],
-    textarea {
-    	height: 35px;
-    	padding: 0 10px;
-    	font-size: 14px;
-    	border: 1px solid #ddd; 	
-    } 
-
-    textarea {
-    	height: 200px; 
-    } 
-
-    input[type=submit] {
-    	padding: 10px 30px;
-    	font-size: 18px; 
-    	color: #fff; 
-    	cursor: pointer;
-    	background: #4aaaa5; 
-    	border: 0 none; 
-    } 
-
-@media screen and (max-width:980px) {
-    #container{
-      width:100%;
-    }
-    #main-section{
-      width:70%; 
-    }
-    #sidebar{
-      width:30%;
-    }
-  } 
-
-  @media screen and (max-width:768px) {
-      #container{
-      width:100%;
-    }
-    .main-section{
-      width:70%; 
-    }
-    .sidebar{
-      width:30%;
-    } 
-  } 
-
-    @media screen and (max-width:640px) {
-      #container{
-      width:100%;
-    }
-    .main-section{
-      width:50%; 
-    }
-    .sidebar{
-      width:40%;
-    } 
-    .social{
-      width:10%;
-    }
-  } 
-
-  @media screen and (max-width:980px) {
-      .work{
-      width:30%;
-      }
-      .auth-image {
-      width:70%;
-      }
-} 
-
-  @media screen and (max-width:768px) {
-      .work{
-      width:40%;
-      }
-      .auth-image {
-      width:60%;
-      }
-} 
-
-  @media screen and (max-width:640px) {
-      .work{
-      width:40%;
-      } 
-      .work h3{
-      width:30%;
-      }
-      .auth-image {
-      width:30%;
-      }
-}
-
-  @media screen and (max-width:980px) {
-    #contact-form{
-      width:50%;
-    }
-    #sidebar{
-      width:80%;
-    }
-} 
-
- @media screen and (max-width:768px) {
-    #contact-form{
-      width:70%;
-    }
-    #sidebar{
-      width:30%;
-    }
-}
-
- @media screen and (max-width:640px) {
-    #contact-form{
-      width:90%;
-    }
-    #sidebar{
-      width:10%;
-    }
+});});
