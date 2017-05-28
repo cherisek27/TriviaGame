@@ -3,6 +3,7 @@ $(document).ready(function(){
 
   var numberCorrect = 0; 
   var numberIncorrect = 0; 
+  var question = []; 
   var question1 = "b"; 
   var question2 = "a";
   var question3 = "d"; 
@@ -33,10 +34,12 @@ $(document).ready(function(){
       number--
       $("#show-number").html("<h2>" + number + "</h2>" );
       $("#numberCorrect").html();
+      $("#numberIncorrect").html(); 
         if (number === 0){
         stop(); 
       }
-    }
+    } 
+    
     function stop(){
       clearInterval(counter); 
       $("#results").show();
