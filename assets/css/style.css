@@ -34,16 +34,19 @@ ul{
   text-align: auto;
 }
 
+
 .main-section{
     background-color: #F5F5DC;
-    color: black;
-}
+    color: #000000;
+} 
+
 button{
-  background-color: #000000;
+  background-color: #FFF;
   width: 20%;
   height: 20px;
   margin-top: 30px;
 }
+
 .question, .answers{
   width: 50%;
   margin-left: auto;
