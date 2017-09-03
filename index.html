@@ -1,109 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Triva Game</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-	<header id="masthead">
-		<div class="container">
-			<h1>90's Trivia Game</h1>
-		</div>
-	</header>
-	<div id="main-container" class="container">
-		<section class="main-section">
-			<h1 class="rules">The Rules</h1>
-			<p class="rules">There are 8 questions, you have 40 seconds to answer all 8 questions.</p>
-			<h2>
-				<button type="button" id="start-button">Start</button>
-			</h2>
-			
-			<div id="show-number"></div>
-			
+<html lang="en-us">
 
-			<p class="question">1. Which basketball player was in "Space Jam?"</p> 
-				<ul class="answers">
-				<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Allen Iverson</label><br/>
-				<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Michael Jordan</label><br/> 
-				<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Larry Bird</label><br/> 
-				<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Scotty Pippen</label><br/>  
-				</ul>
+  <head>
 
-			<p class="question">2. What was Tommy's last name in Rugrats?</p>
-				<ul class="answers">
-				<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Pickles</label><br/>
-				<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Lowry</label><br/> 
-				<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Green</label><br/> 
-				<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Stew</label><br/>  
-				</ul>
+    <meta charset="UTF-8">
+    <title>Totally Trivial Trivia</title>
 
-			<p class="question">3. Mr.Feeny was the teacher in which popular tv show</p>
-				<ul class="answers">
-				<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Beverly Hills, 90210</label><br/>
-				<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Fresh Prince</label><br/> 
-				<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Saved By The Bell</label><br/> 
-				<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Boy Meets World</label><br/> 
-				</ul>
+    <!-- CSS Reset Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 
-			<p class="question">4. The group members of NSYNC included Justin Timberlake, Lance Bass, JC Chasez, Joey Fatone, and..</p> 
-			<ul class="answers">
-				<input type="radio" name="q4" value="a" id="q4a"><label for ="q4a">Jeff Timmons</label><br/>
-				<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Brian Litrell</label><br/> 
-				<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Chris Kirkpatrick</label><br/> 
-				<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Joey McIntyre</label><br/>  
-				</ul>
+    <!-- Our own CSS Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-			<p class="question">5. You are my fire, the one desire" are the first words of which Backstreet Boys' song?</p>
-				<ul class="answers">
-				<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Heartbreaker</label><br/>
-				<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">I Want It That Way</label><br/> 
-				<input type="radio" name="q5" value="c" id="q5c"><label for ="q5c">We Belong Together</label><br/> 
-				<input type="radio" name="q5" value="d" id="q5d"><label for ="q5d">Bye Bye Bye</label><br/>
-				</ul> 
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
-			<p class="question">6. Full house took place in which city?</p>
-				<ul class="answers">
-				<input type="radio" name="q6" value="1" />San Francisco<br/>
-				<input type="radio" name="q6" value="0" />Los Angeles<br/> 
-				<input type="radio" name="q6" value="0" />Atlanta<br/> 
-				<input type="radio" name="q6" value="0" />New York City<br/> 
-				</ul>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet" type="text/css">
 
-			<p class="question">7. "Waterfalls" was the popular song by which group?</p>
-				<ul class="answers">
-				<input type="radio" name="q7" value="a" />Salt-N-Peppa<br/>
-				<input type="radio" name="q7" value="b" />Destiny's Child<br/> 
-				<input type="radio" name="q7" value="c" />TLC<br/>
-				<input type="radio" name="q7" value="d" />Spice Girls<br/> 
-				</ul>
+  </head>
 
-			<p class="question">8. "White Mystery" was a flavor of which candy?</p>
-				<ul class="answers">
-				<input type="radio" name="q8" value="0" />Laffy Taffy<br/>
-				<input type="radio" name="q8" value="0" />Starburst<br/> 
-				<input type="radio" name="q8" value="0" />Warheads<br/>
-				<input type="radio" name="q8" value="1" />Airheads<br/>
-				</ul> 
+  <body>
 
-			<button type="button" id="submit">Submit Final Answers</button>
-			
-			<div id="results">
-			Show me the answers!
-	
-			</div>
-			<button type="button" id="restart">Play Again</button>
-		</section>
-	</div>
-	<footer id="footer" class="site-footer">
-		<div class="container">
-		</div>
-	</footer>
+    <div id="wrapper">
+      <h1>Totally Trivia Game!</h1>
+      <div id="sub-wrapper">
+        <div id="quiz-area">
+          <button id="start">Start</button>
+        </div>
+      </div>
+    </div>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-	<script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
-</body>
+  </body>
+
 </html>
