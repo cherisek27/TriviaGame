@@ -10,29 +10,29 @@ var questions = [{
   answers: ["Pickles", "Lowry", "Green", "Stew"],
   correctAnswer: "Pickles"
 }, {
-  question: "",
-  answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Chicago Bulls"],
-  correctAnswer: "Chicago Bulls"
+  question: "3. Mr.Feeny was the teacher in which popular tv show?",
+  answers: ["Beverly Hills, 90210", "Fresh Prince", "Saved By The Bell", "Boy Meets World"],
+  correctAnswer: "Boy Meets World"
 }, {
-  question: "Which group released the hit song, \"Smells Like Teen Spirit\"?",
-  answers: ["Nirvana", "Backstreet Boys", "The Offspring", "No Doubt"],
-  correctAnswer: "Nirvana"
+  question: "4. The group members of NSYNC included Justin Timberlake, Lance Bass, JC Chasez, Joey Fatone, and..",
+  answers: ["Jeff Timmons", "Brian Litrell", "Chris Kirkpatrick", "Joey McIntyre"],
+  correctAnswer: "Joey McIntye"
 }, {
-  question: "Which popular Disney movie featured the song, \"Circle of Life\"?",
-  answers: ["Aladdin", "Hercules", "Mulan", "The Lion King"],
-  correctAnswer: "The Lion King"
+  question: "5. \"You are my fire, the one desire\" are the first words of which Backstreet Boys' song?",
+  answers: ["Heartbreaker", "I Want It That Way", "We Belong Together", "Bye Bye Bye"],
+  correctAnswer: "I Want It That Way"
 }, {
-  question: "Finish this line from the Fresh Prince of Bel-Air theme song: \"I whistled for a cab and when it came near, the license plate said...\"",
-  answers: ["Dice", "Mirror", "Fresh", "Cab"],
-  correctAnswer: "Fresh"
+  question: "6. Full house took place in which city?",
+  answers: ["San Francisco", "Los Angeles", "Atlanta", "New York City"],
+  correctAnswer: "San Francisco"
 }, {
-  question: "What was Doug's best friend's name?",
-  answers: ["Skeeter", "Mark", "Zach", "Cody"],
-  correctAnswer: "Skeeter"
+  question: "7. \"Waterfalls\" was the popular song by which group?",
+  answers: ["Salt-N-Peppa", "Destiny's Child", "TLC", "Spice Girls"],
+  correctAnswer: "TLC"
 }, {
-  question: "What was the name of the principal at Bayside High in Saved By The Bell?",
-  answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
-  correctAnswer: "Mr.Belding"
+  question: "8. \"White Mystery\" was a flavor of which candy?",
+  answers: ["Laffy Taffy", "Starburst", "Warheads", "Airhead"],
+  correctAnswer: "Airhead"
 }];
 
 // Variable that will hold the setInterval
