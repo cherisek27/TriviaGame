@@ -41,14 +41,6 @@ You will be fully capable of doing this homework by the end of Saturday's class.
 
 - - -
 
-### A Few Last Notes
-
-* Styling and theme are completely up to you. Get creative!
-
-*If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-  **Good Luck!**
-
 ## Copyright
 
 Coding Boot Camp (C) 2016. All Rights Reserved.
