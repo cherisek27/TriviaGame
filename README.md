@@ -25,7 +25,7 @@ You will be fully capable of doing this homework by the end of Saturday's class.
 
 ### Option One: Basic Quiz (Timed Form)
 
-https://user-images.githubusercontent.com/26241261/30522777-aa230136-9b8a-11e7-95d3-9f0d24f323c8.png
+<img width="967" alt="screen shot 2017-09-17 at 9 22 59 am" src="https://user-images.githubusercontent.com/26241261/30522777-aa230136-9b8a-11e7-95d3-9f0d24f323c8.png">
 
 **[Click Here to Watch the Demo](basic-trivia-demo.mov)**.
 
