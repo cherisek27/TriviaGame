@@ -27,7 +27,9 @@ You will be fully capable of doing this homework by the end of Saturday's class.
 
 <img width="967" alt="screen shot 2017-09-17 at 9 22 59 am" src="https://user-images.githubusercontent.com/26241261/30522777-aa230136-9b8a-11e7-95d3-9f0d24f323c8.png"> 
 
-<img width="963" alt="screen shot 2017-09-17 at 9 32 47 am" src="https://user-images.githubusercontent.com/26241261/30522820-42fdc350-9b8b-11e7-8439-a7842d289268.png">
+<img width="963" alt="screen shot 2017-09-17 at 9 32 47 am" src="https://user-images.githubusercontent.com/26241261/30522820-42fdc350-9b8b-11e7-8439-a7842d289268.png"> 
+
+<img width="954" alt="screen shot 2017-09-17 at 9 35 28 am" src="https://user-images.githubusercontent.com/26241261/30522844-9bc34cee-9b8b-11e7-949a-865d6af4f40c.png">
 
 **[Click Here to Watch the Demo](basic-trivia-demo.mov)**.
 
