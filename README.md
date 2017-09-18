@@ -1,11 +1,7 @@
 
 ### Overview
 
-In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
-
-### Remember
-
-You will be fully capable of doing this homework by the end of Saturday's class.
+A Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
 
 ### Before You Begin
 
@@ -31,8 +27,6 @@ You will be fully capable of doing this homework by the end of Saturday's class.
 
 <img width="954" alt="screen shot 2017-09-17 at 9 35 28 am" src="https://user-images.githubusercontent.com/26241261/30522844-9bc34cee-9b8b-11e7-949a-865d6af4f40c.png">
 
-**[Click Here to Watch the Demo](basic-trivia-demo.mov)**.
-
 * You'll create a trivia form with multiple choice or true/false options (your choice).
 
 * The player will have a limited amount of time to finish the quiz. 
@@ -43,9 +37,5 @@ You will be fully capable of doing this homework by the end of Saturday's class.
 
 * Don't forget to include a countdown timer.
 
-- - -
 
-## Copyright
-
-Coding Boot Camp (C) 2016. All Rights Reserved.
 
