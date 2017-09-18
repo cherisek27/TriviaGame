@@ -19,7 +19,17 @@ A Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be s
 
 6. Choose a game to build from your options below. 
 
-### Option One: Basic Quiz (Timed Form)
+### Basic Quiz (Timed Form)
+
+* You'll create a trivia form with multiple choice or true/false options (your choice).
+
+* The player will have a limited amount of time to finish the quiz. 
+
+* The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+
+* Don't let the player pick more than one answer per question.   
+
+* Don't forget to include a countdown timer.
 
 <img width="967" alt="screen shot 2017-09-17 at 9 22 59 am" src="https://user-images.githubusercontent.com/26241261/30522777-aa230136-9b8a-11e7-95d3-9f0d24f323c8.png"> 
 
@@ -27,15 +37,7 @@ A Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be s
 
 <img width="954" alt="screen shot 2017-09-17 at 9 35 28 am" src="https://user-images.githubusercontent.com/26241261/30522844-9bc34cee-9b8b-11e7-949a-865d6af4f40c.png">
 
-* You'll create a trivia form with multiple choice or true/false options (your choice).
 
-* The player will have a limited amount of time to finish the quiz. 
-
-  * The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
-
-* Don't let the player pick more than one answer per question.
-
-* Don't forget to include a countdown timer.
 
 
 
